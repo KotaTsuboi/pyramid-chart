@@ -4,13 +4,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.html --no-cache",
-    "build": "rm -rf docs/*; parcel build src/index.html --no-cache --dist-dir docs"
+    "prebuild": "shx rm -rf docs/*",
+    "build": "parcel build src/index.html --no-cache --dist-dir docs",
+    "deploy": "push-dir --dir=docs --branch=main --cleanup --verbose" 
   },
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "parcel": "^2.6.2",
+    "shx": "^0.3.4"
   },
   "dependencies": {
     "@cubejs-client/core": "^0.31.0",
-    "chart.js": "^4.0.0"
+    "chart.js": "^4.0.0",
+    "push-dir": "^0.4.1"
   }
 }
