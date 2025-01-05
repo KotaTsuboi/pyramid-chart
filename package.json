@@ -6,7 +6,7 @@
     "dev": "parcel src/index.html --no-cache",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build src/index.html --no-cache --public-url ./",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --verbose" 
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose" 
   },
   "devDependencies": {
     "parcel": "^2.6.2",
