@@ -1,4 +1,21 @@
-import {Chart} from 'chart.js/auto'
+import {
+    Chart,
+    Colors,
+    BarController,
+    BarElement,
+    CategoryScale,
+    LinearScale,
+    Legend
+} from 'chart.js'
+
+Chart.register(
+    Colors,
+    BarController,
+    BarElement,
+    CategoryScale,
+    LinearScale,
+    Legend
+);
 
 (async function () {
     const labels = [
