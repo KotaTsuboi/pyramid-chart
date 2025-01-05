@@ -5,7 +5,10 @@ import {
     BarElement,
     CategoryScale,
     LinearScale,
-    Legend
+    Legend,
+    Title,
+    SubTitle,
+    Tooltip,
 } from 'chart.js'
 
 Chart.register(
@@ -14,7 +17,10 @@ Chart.register(
     BarElement,
     CategoryScale,
     LinearScale,
-    Legend
+    Legend,
+    Title,
+    SubTitle,
+    Tooltip,
 );
 
 (async function () {
